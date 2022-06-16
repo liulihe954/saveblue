@@ -14,10 +14,10 @@ python3 saveblue.py --root SomeDir \
                --output \
                --delete
 ```
-Mandatory:
+Mandatory:  
 `--root` specifies the (parent) folder need to be scanned.
 
-Optional:
+Optional:  
 `--top` set the total number of file to return. default 20, means largest 20 files.  
 `--suffix` specifies the suffix of file to check. default is empty which mean checking all files.  
 `--output` specifies the name of the output file list. Will be auto generated.  
