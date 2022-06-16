@@ -9,13 +9,16 @@ wget https://raw.githubusercontent.com/liulihe954/saveblue/main/saveblue.py
 Usage
 ```
 python3 saveblue.py --root SomeDir \
-               --top 20 \
-               --suffix SomeSuffix\
-               --output  LargeFiles_SomeDir.txt\
-               --delete F
+               --top \
+               --suffix \
+               --output \
+               --delete
 ```
-`--root` specifies the (parent) folder need to be scanned.  
-`--top` set the total number of file to return. Top 20 means largest 20 files.  
+Mandatory:
+`--root` specifies the (parent) folder need to be scanned.
+
+Optional:
+`--top` set the total number of file to return. default 20, means largest 20 files.  
 `--suffix` specifies the suffix of file to check. default is empty which mean checking all files.  
-`--output` specifies the name of the output file list.  
-`--delete` if T, the found large files will be deleted.   
+`--output` specifies the name of the output file list. Will be auto generated.  
+`--delete` if T, the found large files will be deleted. default False.   
